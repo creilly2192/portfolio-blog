@@ -15,6 +15,16 @@
       color: $white;
       display: table;
     }
+    .img-wrapper {
+      width: 100%;
+      height: 400px;
+      padding-bottom: 35px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 

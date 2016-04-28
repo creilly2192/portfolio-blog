@@ -7,6 +7,10 @@ class PagesController < ApplicationController
     @posts = Post.all.limit(1).order("created_at desc")
   end
 
+  def projects
+
+  end  
+
   def contact
 
   end
