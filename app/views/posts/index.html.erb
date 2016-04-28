@@ -1,1 +1,28 @@
-<h1>Hello World</h1>
+<header>
+  <div class="wrapper">
+    <h1 class="page-title text-center">What's On My Mind</h1>
+    <hr class="underline">
+  </div>
+</header>
+
+<div class="posts-wrapper small-wrapper">
+  <% @posts.each do |post| %>
+  <div class="post">
+    <h2 class="post-title text-center">
+      <%= link_to post.title, post %>
+      <a href="article_show.html">Learning To Code</a></h2>
+    <p class="post-date text-center">Posted on <%=  post.created_at.strftime('%A, %B, %d')%> by Christina</p>
+    <div class="post-description"><%= markdown post.content %></div>
+    <hr class="underline">
+  </div>
+  <% end %>
+
+</div>
+
+<div class="pagination text-center">
+  <span class="previous_page disabled">&#8592; Previous</span>
+  <em class="current">1</em>
+  <a rel="next" href="/products?page=2">2</a>
+  <a href="/products?page=3">3</a>
+  <a class="next_page" rel="next" href="/products?page=2">Next &#8594;</a>
+</div>
