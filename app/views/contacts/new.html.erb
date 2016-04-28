@@ -1,0 +1,38 @@
+<header>
+  <div class="wrapper">
+    <h1 class="page-title text-center">Say Hello!</h1>
+    <hr class="underline">
+  </div>
+</header>
+
+<div class="wrapper">
+  <div class="small-wrapper">
+      <%= form_for @contact do |f| %>
+        <%= f.label :name %><br />
+        <%= f.text_field :name, required: true %>
+
+        <br />
+
+        <%= f.label :email %><br />
+        <%= f.email_field :email, required: true %>
+
+        <br />
+
+        <%= f.label :message %><br />
+        <%= f.text_area :message, as: :text %>
+
+        <br />
+
+        <div class="hidden">
+          <%= f.label :nickname %><br />
+          <%= f.text_field :nickname, hint: 'leave this field blank' %>
+        </div>
+
+
+        <%= f.submit 'Send', class: "button" %>
+
+
+      <% end %>
+
+  </div>
+</div>
