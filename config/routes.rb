@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   get 'projects', to:'pages#projects'
 
+  get '*path' => redirect('/')
+
 end
