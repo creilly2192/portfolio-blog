@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def about
-
+    @posts = Post.all.limit(1).order("created_at desc")
   end
 
   def contact

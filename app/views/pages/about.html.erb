@@ -1,0 +1,45 @@
+<section id="about">
+  <div class="wrapper clearfix">
+    <div class="col-1 about-content">
+      <h2>About</h2>
+      <hr>
+        <p>I'm a front end web developer living in Lafayette, LA.</p>
+        <p>When I'm not building websites for clients, you can find me reading tech posts on medium or watching tutorials on youtube. My favorite thing to do is learn. Whether it's a new programming language or world history. I'm always looking for something new to try out.</p>
+        <p>You can find samples of my code on <a href="https://github.com/creilly2192" target="_blank"><span class="social-link">github</span></a>, my work history on <a href="https://www.linkedin.com/in/christinareilly2" target="_blank"><span class="social-link">linkedin</span></a>, and see what I do when I'm not coding on <a href="https://www.instagram.com/christinareilly_/" target="_blank"><span class="social-link">instagram</span>.</a></a></p>
+        <p>This site was built by me using <span class="skill">HTML5 Boilerplate</span>, <span class="skill">Sass</span>, and <span class="skill">Rails</span>.</p>
+        <a href="#" class="resume-button">Download Resume PDF</a>
+    </div><!-- end col-1 -->
+    <div class="col-2 about-content info">
+      <h2>Skills</h2>
+      <hr>
+        <h3>Front End</h3>
+          <p>HTML5, CSS3, Sass, JavaScript</p>
+        <h3>Frameworks</h3>
+          <p>Bootstrap, jQuery, React</p>
+        <h3>Back End</h3>
+          <p>Ruby, Rails</p>
+        <h3>Tools I Use</h3>
+          <p>Atom</p>
+          <p>Git / Github</p>
+          <p>Codekit</p>
+          <p>HTML5 Boilerplate</p>
+          <p>Photoshop</p>
+    </div><!-- end col-2 -->
+    <div class="col-3 about-content">
+      <h2>More</h2>
+      <hr>
+        <h3>Recent Article</h3>
+          <% @posts.each do |post| %>
+            <p><%= link_to post.title, post %></p>
+          <% end %>
+        <h3>Current Project</h3>
+          <p>Project description</p>
+        <h3>Reading</h3>
+          <p>Book Title</p>
+        <h3>Last Place I traveled</h3>
+          <p>Ft.Lauderdale, FL</p>
+        <h3>Attempting To Learn</h3>
+          <p>Angular, Node, &amp; Karate</p>
+    </div><!-- end col-3 -->
+  </div><!-- end wrapper -->
+</section><!-- end about -->

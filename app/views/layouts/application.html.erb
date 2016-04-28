@@ -3,6 +3,8 @@
 <head>
   <title>Christina Reilly - Web Developer - Lafayette, LA</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:700,500' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -17,10 +19,10 @@
     <div id="main_navigation" class="clearfix">
       <p class="copyright">&copy; 2016 Christina Reilly</p>
       <nav>
-        <a href="index.html">Home</a>
+        <%= link_to "Home", root_path %>
         <a href="#">Projects</a>
-        <a href="articles.html">Articles</a>
-        <a href="about.html">About</a>
+        <%= link_to "Articles", posts_path %>
+        <%= link_to "About", about_path %>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
