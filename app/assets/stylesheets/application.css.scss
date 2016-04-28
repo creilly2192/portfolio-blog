@@ -21,9 +21,7 @@ a {
   text-decoration: none;
 }
 
-ul, li {
-  list-style: none;
-}
+
 
 h1, h2, h4, h5, h6, ul, li {
   font-family: 'Ubuntu', sans-serif;
@@ -64,7 +62,7 @@ p, ul, ol {
   width: 90%;
   max-width: 100%;
   margin: 0 auto;
-  
+
 }
 
 .small-wrapper {
@@ -290,6 +288,6 @@ input[type="submit"], input[type="button"], button  {
 }
 
 
-
+@import 'pygments';
 @import 'homepage_styles';
 @import 'posts_style';
