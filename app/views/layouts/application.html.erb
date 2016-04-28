@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Christina Reilly - Web Developer - Lafayette, LA</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:700,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,6 +12,19 @@
 <body>
 
 <%= yield %>
+
+  <footer>
+    <div id="main_navigation" class="clearfix">
+      <p class="copyright">&copy; 2016 Christina Reilly</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Projects</a>
+        <a href="articles.html">Articles</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
 
 </body>
 </html>

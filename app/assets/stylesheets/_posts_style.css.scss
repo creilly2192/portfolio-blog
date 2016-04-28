@@ -1,0 +1,45 @@
+.posts-wrapper {
+  .post {
+    margin-bottom: 95px;
+    .post-title {
+      font-size:1.9em;
+    }
+    .post-date {
+      font-size: .80em;
+    }
+    .continue-reading {
+      position: relative;
+      //margin: 0 auto;
+      background: $dark;
+      padding: 5px 30px;
+      color: $white;
+      display: table;
+    }
+  }
+}
+
+.pagination:before,
+.pagination:after {
+  content: "";
+  display: table;
+}
+
+.pagination:after {
+  clear: both;
+}
+
+.pagination {
+  padding-bottom: 40px;
+  margin: 3.5em 0 0 0;
+  a, .previous_page, .current, .next_page {
+    padding: .4em .3em;
+    border-radius: .20em;
+    line-height: 19px;
+    font-weight: bold;
+    font-style: normal;
+    background: $white;
+  }
+  .current {
+    color: $accent-color;
+  }
+}
