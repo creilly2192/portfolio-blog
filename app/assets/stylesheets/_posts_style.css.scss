@@ -28,6 +28,20 @@
   }
 }
 
+.post-options {
+  a {
+    padding: 5px 20px;
+    &.edit {
+      background: mediumseagreen;
+      color: $white;
+    }
+    &.delete {
+      background: tomato;
+      color: $white;
+    }
+  }
+}
+
 .pagination:before,
 .pagination:after {
   content: "";
