@@ -3,6 +3,12 @@ $dark: #333333; //black
 $accent-color: #ffcc00; //yellow
 $white: #ffffff; //white
 
+//breakpoints
+$xs-small: 480px;
+$small: 668px;
+$medium: 990px;
+$large: 1400px;
+
 * {
   box-sizing: border-box;
   //border: 1px solid red;
@@ -101,11 +107,20 @@ p, ul, ol {
         margin-left: 2em;
       }
     }
+    @media (max-width: $small) {
+      float: none;
+      text-align: center;
+      margin-top: 10px;
+    }
   }
   .copyright {
     float: right;
     font-size: 12.5px;
     margin: 0;
+    @media (max-width: $small) {
+      float: none;
+      text-align: center;
+    }
   }
   &.home-nav {
     border-top: none;
@@ -183,14 +198,23 @@ header {
     width: 38%;
     padding: 0 3% 0 1.5%;
     padding-bottom: 50px;
+    @media (max-width: $medium) {
+      width: 100%;
+    }
   }
   .col-2 {
     width: 33%;
     padding: 0 3% 0 1.5%;
+    @media (max-width: $medium) {
+      width: 50%;
+    }
   }
   .col-3 {
     width: 23%;
     padding: 0 3% 0 1.5%;
+    @media (max-width: $medium) {
+      width: 50%;
+    }
   }
 
   .about-content {
