@@ -1,75 +1,70 @@
-<header>
+<section id="projects">
   <div class="wrapper">
-    <h1 class="page-title text-center">Recent Projects</h1>
-    <hr class="underline">
-  </div>
-</header>
+    <header>
+        <h1 class="page-title text-center">Recent Projects</h1>
+        <hr class="underline">
+    </header>
 
-<div class="posts-wrapper small-wrapper">
-  <a href="#">
-  <div class="post">
-    <h2 class="post-title text-center">Pearson Dynamics</h2>
-    <p class="project-skills text-center">HTML5, Sass, JavaScript</p>
-    <div class="img-wrapper text-center">
-      <img class="post-image text-center" src="<%= asset_path( 'david-browser.png' ) %>" alt="Pearson Dynamics Home Page" />
-    </div>
-    <p class="post-description">This a small, not relevent description of an article that does not have anything within. Much like life. Here are some more words to fill in the space, ya know what I am saying, dude?</p>
-    <hr class="underline">
-  </div><!-- end post -->
-  </a>
-  <div class="post">
-    <h2 class="post-title text-center"><a href="#">Alpha Blog App</a></h2>
-    <p class="project-skills text-center">HTML, Sass, Ruby on Rails</p>
-    <div class="img-wrapper text-center">
-      <img class="post-image text-center" src="<%= asset_path( 'ocean.jpg' ) %>" alt="" />
-    </div>
-    <p class="post-description">This a small, not relevent description of an article that does not have anything within. Much like life. Here are some more words to fill in the space, ya know what I am saying, dude?</p>
-    <hr class="underline">
-  </div><!-- end post -->
-  <div class="post">
-    <h2 class="post-title text-center"><a href="#">Alpha Blog App</a></h2>
-    <p class="project-skills text-center">HTML, Sass, Ruby on Rails</p>
-    <div class="img-wrapper text-center">
-      <img class="post-image text-center" src="<%= asset_path( 'ocean.jpg' ) %>" alt="" />
-    </div>
-    <p class="post-description">This a small, not relevent description of an article that does not have anything within. Much like life. Here are some more words to fill in the space, ya know what I am saying, dude?</p>
-    <hr class="underline">
-  </div><!-- end post -->
-  <div class="post">
-    <h2 class="post-title text-center"><a href="#">Alpha Blog App</a></h2>
-    <p class="project-skills text-center">HTML, Sass, Ruby on Rails</p>
-    <div class="img-wrapper text-center">
-      <img class="post-image text-center" src="<%= asset_path( 'ocean.jpg' ) %>" alt="" />
-    </div>
-    <p class="post-description">This a small, not relevent description of an article that does not have anything within. Much like life. Here are some more words to fill in the space, ya know what I am saying, dude?</p>
-    <hr class="underline">
-  </div><!-- end post -->
-  <div class="post">
-    <h2 class="post-title text-center"><a href="#">Alpha Blog App</a></h2>
-    <p class="project-skills text-center">HTML, Sass, Ruby on Rails</p>
-    <div class="img-wrapper text-center">
-      <img class="post-image text-center" src="<%= asset_path( 'ocean.jpg' ) %>" alt="" />
-    </div>
-    <p class="post-description">This a small, not relevent description of an article that does not have anything within. Much like life. Here are some more words to fill in the space, ya know what I am saying, dude?</p>
-    <hr class="underline">
-  </div><!-- end post -->
-  <div class="post">
-    <h2 class="post-title text-center"><a href="#">Alpha Blog App</a></h2>
-    <p class="project-skills text-center">HTML, Sass, Ruby on Rails</p>
-    <div class="img-wrapper text-center">
-      <img class="post-image text-center" src="<%= asset_path( 'ocean.jpg' ) %>" alt="" />
-    </div>
-    <p class="post-description">This a small, not relevent description of an article that does not have anything within. Much like life. Here are some more words to fill in the space, ya know what I am saying, dude?</p>
-    <hr class="underline">
-  </div><!-- end post -->
-  <div class="post">
-    <h2 class="post-title text-center"><a href="#">Alpha Blog App</a></h2>
-    <p class="project-skills text-center">HTML, Sass, Ruby on Rails</p>
-    <div class="img-wrapper text-center">
-      <img class="post-image text-center" src="<%= asset_path( 'ocean.jpg' ) %>" alt="" />
-    </div>
-    <p class="post-description">This a small, not relevent description of an article that does not have anything within. Much like life. Here are some more words to fill in the space, ya know what I am saying, dude?</p>
-    <hr class="underline">
-  </div><!-- end post -->
 
-</div><!-- end post-wrapper -->
+    <div class="projects-wrapper clearfix">
+      <div class="col-5">
+        <div class="project">
+          <h2 class="project-title text-center">Pearson Dynamics</h2>
+          <p class="project-skills text-center">HTML5, Sass, JavaScript</p>
+          <div class="img-wrapper text-center">
+            <img class="post-image text-center" src="<%= asset_path( 'david-laptop.png' ) %>" alt="Pearson Dynamics Home Page" />
+          </div>
+          <p class="text-center">A resume website for an ocean engineer that features a responsive timeline.</p>
+          <a href="http://pearsondynamics.co/" target="_blank"><p class="btn text-center">View Site</p></a>
+        </div>
+
+        <div class="project">
+          <h2 class="project-title text-center">Simon Says</h2>
+          <p class="project-skills text-center">HTML5, Sass, JavaScript</p>
+          <div class="img-wrapper text-center">
+            <img class="post-image text-center" src="<%= asset_path( 'simon.png' ) %>" alt="Pearson Dynamics Home Page" />
+          </div>
+          <p class="text-center">A resume website for an ocean engineer that features a responsive timeline.</p>
+          <a href="#"><p class="btn text-center">View Site</p></a>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="project">
+          <h2 class="project-title text-center">React Todo.</h2>
+          <p class="project-skills text-center">HTML5, Sass, React</p>
+          <div class="img-wrapper text-center">
+            <img class="post-image text-center" src="<%= asset_path( 'todo.png' ) %>" alt="Pearson Dynamics Home Page" />
+          </div>
+          <p class="text-center">A resume website for an ocean engineer that features a responsive timeline.</p>
+          <a href="#"><p class="btn text-center">View Site</p></a>
+        </div>
+
+        <div class="project">
+          <h2 class="project-title text-center">Pomodoro Timer</h2>
+          <p class="project-skills text-center">HTML5, Sass, JavaScript</p>
+          <div class="img-wrapper text-center">
+            <img class="post-image text-center" src="<%= asset_path( 'timer-laptop.png' ) %>" alt="Pearson Dynamics Home Page" />
+          </div>
+          <p class="text-center">A resume website for an ocean engineer that features a responsive timeline.</p>
+          <a href="#"><p class="btn text-center">View Site</p></a>
+        </div>
+
+      </div>
+
+      <div class="col-7">
+        <div class="project">
+          <h2 class="project-title text-center">Weather Me Up!</h2>
+          <p class="project-skills text-center">HTML5, Sass, JavaScript/AJAX</p>
+          <div class="img-wrapper text-center">
+            <img class="post-image text-center" src="<%= asset_path( 'weather-app.png' ) %>" alt="Pearson Dynamics Home Page" />
+          </div>
+          <p class="text-center">A resume website for an ocean engineer that features a responsive timeline.</p>
+          <a href="#"><p class="btn text-center">View Site</p></a>
+        </div>
+
+      </div>
+
+    </div>
+  </div><!-- end projects-wrapper-->
+</section>
