@@ -9,6 +9,9 @@
       font-size: 90px;
       text-transform: uppercase;
       //add media query for smaller screens
+      @media (max-width: 1279px) {
+        font-size: 62px;
+      }
       @media (max-width: 600px) {
         font-size: 52px;
       }
@@ -20,12 +23,21 @@
       font-size: 20px;
       font-weight: 500;
       position: relative;
-      top: 85px;
+      top: 22px;
       left: 5px;
+      @media (max-width: 1279px) {
+        top: 13px;
+        
+      }
       @media (max-width: 600px) {
         top: 55px;
         left: 3px;
       }
     }
   }
+}
+
+.wrapper.home {
+  position: relative;
+  top: 28%;
 }

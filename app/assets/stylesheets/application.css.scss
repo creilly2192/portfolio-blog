@@ -11,15 +11,26 @@ $large: 1400px;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   //border: 1px solid red;
 }
 
-body {
+html, body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   color: $dark;
   height: 100%;
   letter-spacing: 1px;
+}
+
+section {
+  min-height: 100%;
+}
+
+section .wrapper {
+  overflow: auto;
+  padding-bottom: 130px;
 }
 
 a {
@@ -136,8 +147,9 @@ header {
     text-transform: uppercase;
   }
   .underline {
-    top: -10px;
+    margin: 0 auto;
     width: 10rem;
+    top:11px;
   }
 
   .back-to {
@@ -315,6 +327,11 @@ input[type="submit"], input[type="button"], button  {
   }
 }
 
+footer {
+  height: 130px;
+  position: relative;
+  clear: both;
+}
 
 @import 'pygments';
 @import 'homepage_styles';
