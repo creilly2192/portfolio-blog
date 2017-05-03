@@ -25,14 +25,19 @@
     a {
       position: relative;
       width: 30%;
-      padding-top: 7px;
-      padding-bottom: 7px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding: 7px 30px;
       border-radius: 2px;
       margin: 0 auto;
       margin-top: 10px;
       background: $accent-color;
+      color: $white;
+      text-transform:uppercase;
+      transition: all .3s;
+      border: 1px solid $accent-color;
+      &:hover {
+        background: transparent;
+        color: $accent-color;
+      }
     }
   }
 
